@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --size: calc(1vh + 1vw);
+    --messageColor: #6495ED
+}
+
+.container{
+    
+}
+
+.navigationSection{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 20%;
+    border: solid #000 1px;
+    height: 100%;
+}
+
+.inputMessageSection{
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    width: 79.9%;
+    border: solid #000 1px;
+    height: 100%;
+}
+
+.message{
+    position: absolute;
+    top: 88%;
+    box-shadow: 0px 0px 0px 1px;
+    width: 100%;
+    height: 12%;
+}
+
+.message textarea{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: calc(var(--size) * 40);
+    resize: none;
+    height: 80%;
+
+}
+
+#sendMsgBtn{
+    position: absolute;
+    top: 1vw;
+    left: 80%;
+    width: 10vw;
+}
+
+.inputMessageHeader{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* border: solid #000 1px; */
+    box-shadow: 2px 1px 1px 2px snow;
+    width: 100%;
+    height: 8%;
+}
+
+.typingStatus{
+    position: absolute;
+    left: 1.5%;
+    top: 60%;
+}
+
+.outputMessageSection{
+    position: absolute;
+    top:8%;
+    width: 100%;
+    border: solid red 1px;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.outputMessageSection ul{
+    position: relative;
+    margin-top: 1.5%;
+    list-style: none;
+}
+
+.chatMsg{
+    position: relative;
+    left: 80%;
+    border: solid var(--messageColor) 1px;
+    width: 20%;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.botMsg{
+    position: relative;
+    left: 0%;
+    border: solid var(--messageColor) 1px;
+    width: 20%;
+    border-radius: 8px;
+    padding: 5px;
+}
